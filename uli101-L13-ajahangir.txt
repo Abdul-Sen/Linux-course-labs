@@ -1,0 +1,104 @@
+uli101_181ma22@matrix:~> cat uli101-L13-ajahangir.txt
+Script started on Thu 05 Apr 2018 01:02:39 PM EDT
+uli101_181ma22@matrix:~> grep model /proc/cpuinfo
+model           : 65
+model name      : Dual-Core AMD Opteron(tm) Processor 8220
+model           : 65
+model name      : Dual-Core AMD Opteron(tm) Processor 8220
+uli101_181ma22@matrix:~> #use quotes to make sure spaces are taken care of because spaces is a special character
+uli101_181ma22@matrix:~> grep -c "Remote" /etc/services
+175
+uli101_181ma22@matrix:~> grep -wl "send"
+
+^C
+uli101_181ma22@matrix:~> grep -wl "send" /etc/services
+/etc/services
+uli101_181ma22@matrix:~> grep -w "send" /etc/services
+mpm-snd          46/tcp    # MPM [default send]
+mpm-snd          46/udp    # MPM [default send]
+send            169/tcp    # SEND
+send            169/udp    # SEND
+netviewdm2      730/tcp    # IBM NetView DM/6000 send/tcp
+netviewdm2      730/udp    # IBM NetView DM/6000 send/tcp
+tell            754/tcp    # send
+tell            754/udp    # send
+ideafarm-door   902/udp    # self documenting Door: send 0x00 for info
+ideafarm-panic  903/udp    # self documenting Panic Door: send 0x00 for info
+skip-cert-send  6456/udp   # SKIP Certificate Send
+uli101_181ma22@matrix:~> grep -w -l "send" /etc/services
+/etc/services
+uli101_181ma22@matrix:~> grep -i "send" /etc/services
+msp              18/tcp    # Message Send Protocol
+msp              18/udp    # Message Send Protocol
+mpm-snd          46/tcp    # MPM [default send]
+mpm-snd          46/udp    # MPM [default send]
+send            169/tcp    # SEND
+send            169/udp    # SEND
+srssend         362/tcp    # SRS Send
+srssend         362/udp    # SRS Send
+sift-uft        608/tcp    # Sender-Initiated/Unsolicited File Transfer
+sift-uft        608/udp    # Sender-Initiated/Unsolicited File Transfer
+netviewdm2      730/tcp    # IBM NetView DM/6000 send/tcp
+netviewdm2      730/udp    # IBM NetView DM/6000 send/tcp
+tell            754/tcp    # send
+tell            754/udp    # send
+ideafarm-door   902/udp    # self documenting Door: send 0x00 for info
+ideafarm-panic  903/udp    # self documenting Panic Door: send 0x00 for info
+#                           Nicholas Chua <nick&sendit.se>
+ipsendmsg       1992/tcp   # IPsendmsg
+ipsendmsg       1992/udp   # IPsendmsg
+#                          Norbert Sendetzky <norbert&linuxnetworks.de>
+#                          Gregg Townsend <gmt&cs.arizona.edu> November 2003
+skip-cert-send  6456/udp   # SKIP Certificate Send
+uli101_181ma22@matrix:~> grep -i -l "send" /etc/services
+/etc/services
+uli101_181ma22@matrix:~> grep -i -c "send" /etc/services
+22
+uli101_181ma22@matrix:~> clear
+uli101_181ma22@matrix:~> grep -i -c -v "send" /etc/services
+15483
+uli101_181ma22@matrix:~> grep -i -n "send" /etc/services
+134:msp              18/tcp    # Message Send Protocol
+135:msp              18/udp    # Message Send Protocol
+219:mpm-snd          46/tcp    # MPM [default send]
+220:mpm-snd          46/udp    # MPM [default send]
+583:send            169/tcp    # SEND
+584:send            169/udp    # SEND
+937:srssend             362/tcp    # SRS Send
+938:srssend             362/udp    # SRS Send
+1651:sift-uft        608/tcp    # Sender-Initiated/Unsolicited File Transfer
+1652:sift-uft        608/udp    # Sender-Initiated/Unsolicited File Transfer
+1964:netviewdm2      730/tcp    # IBM NetView DM/6000 send/tcp
+1965:netviewdm2      730/udp    # IBM NetView DM/6000 send/tcp
+1998:tell               754/tcp    # send
+1999:tell               754/udp    # send
+2120:ideafarm-door   902/udp    # self documenting Door: send 0x00 for info
+2122:ideafarm-panic  903/udp    # self documenting Panic Door: send 0x00 for info
+4775:#                      Nicholas Chua <nick&sendit.se>
+4970:ipsendmsg       1992/tcp   # IPsendmsg
+4971:ipsendmsg       1992/udp   # IPsendmsg
+7372:#                     Norbert Sendetzky <norbert&linuxnetworks.de>
+10347:#                          Gregg Townsend <gmt&cs.arizona.edu> November 2003
+12734:skip-cert-send  6456/udp   # SKIP Certificate Send
+uli101_181ma22@matrix:~> grep -E "27" /usr/share |head -10
+uli101_181ma22@matrix:~> grep -E "\2\7" /usr/share |head -10
+grep: Invalid back reference
+uli101_181ma22@matrix:~> grep "\2\7" /usr/share |head -10
+grep: Invalid back reference
+uli101_181ma22@matrix:~> grep -E "27" /usr/share |head -10
+uli101_181ma22@matrix:~> grep -E "*27*" /usr/share |head -10
+uli101_181ma22@matrix:~> grep -Eo '[2][7]' /usr/sare |head -1
+grep: /usr/sare: No such file or directory
+uli101_181ma22@matrix:~> grep -Eo "[2][7]" /usr/sare |head -1
+grep: /usr/sare: No such file or directory
+uli101_181ma22@matrix:~> grep -E "[2][7]" /usr/sare |head -1
+grep: /usr/sare: No such file or directory
+uli101_181ma22@matrix:~> grep -E "{2,7}" /usr/sare |head -10
+grep: /usr/sare: No such file or directory
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Thu 05 Apr 2018 01:20:00 PM EDT
+uli101_181ma22@matrix:~>

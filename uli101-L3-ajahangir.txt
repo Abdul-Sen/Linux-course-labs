@@ -1,0 +1,33 @@
+uli101_181ma22@matrix:~> cat uli101-L3-ajahangir.txt
+Script started on Sun 11 Feb 2018 02:58:43 PM EST
+uli101_181ma22@matrix:~> cd
+uli101_181ma22@matrix:~> pwd
+/home/uli101_181ma22
+uli101_181ma22@matrix:~> The name of my home dir is uli101_181ma22
+If 'The' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf The
+uli101_181ma22@matrix:~> mkdir two
+uli101_181ma22@matrix:~> file two
+two: directory
+uli101_181ma22@matrix:~> cd two
+uli101_181ma22@matrix:~/two> pwd
+/home/uli101_181ma22/two
+uli101_181ma22@matrix:~/two> vim fox
+uli101_181ma22@matrix:~/two> ls /home/uli101_181ma22/two
+fox
+uli101_181ma22@matrix:~/two> ls two
+ls: cannot access two: No such file or directory
+uli101_181ma22@matrix:~/two> cd
+uli101_181ma22@matrix:~> ls two
+fox
+uli101_181ma22@matrix:~> rmdir two
+rmdir: failed to remove `two': Directory not empty
+uli101_181ma22@matrix:~> rm two/fox
+uli101_181ma22@matrix:~> rmdir two
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Sun 11 Feb 2018 03:02:57 PM EST
+^[[>0;136;0culi101_181ma22@matrix:~> 0;136;0c

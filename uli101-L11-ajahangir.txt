@@ -1,0 +1,290 @@
+cauli101_181ma22@matrix:~> cat uli101-L11-ajahangir.txt
+Script started on Tue 03 Apr 2018 10:37:02 AM EDT
+uli101_181ma22@matrix:~> vim all
+uli101_181ma22@matrix:~> chmod 700 all
+uli101_181ma22@matrix:~> ./all
+name of calling program : ./all
+Individual commands : -
+all positional parameters:
+Number of positional parameters: 0
+uli101_181ma22@matrix:~> # now testing it out with diffrent parameters
+uli101_181ma22@matrix:~> ./all para1 para2 para3 para4
+name of calling program : ./all
+Individual commands : para1-
+all positional parameters: para1 para2 para3 para4
+Number of positional parameters: 4
+uli101_181ma22@matrix:~> #oops, our individual commands is wrong
+uli101_181ma22@matrix:~> vim all
+uli101_181ma22@matrix:~> ./all para1 para2 para3 para4
+name of calling program : ./all
+Individual commands : para1-para4
+all positional parameters: para1 para2 para3 para4
+Number of positional parameters: 4
+uli101_181ma22@matrix:~> vim all
+uli101_181ma22@matrix:~> ln all linkto
+uli101_181ma22@matrix:~> ls
+Acceptable-Use-Policy  catMe   first        output            scriptForDateTime         uli101-L5-ajahangir.txt
+Desktop                ch10l1  first.brk    pathabsolute      short                     uli101-L6-ajahangir.txt
+Documents              ch8l2   linkto       pizza             uli101-L1-ajahangir.txt   uli101-L7-ajahangir.txt
+Test.sh                code.c  longListing  pizzaCPY          uli101-L10-ajahangir.txt  uli101-L8-ajahangir.txt
+all                    days    ls.out       practice_rename   uli101-L2-ajahangir.txt   uli101-L9-ajahangir.txt
+bin                    dog     my file      practice_renamed  uli101-L3-ajahangir.txt   uli101combined
+brkAddScript           file    my file.brk  prog              uli101-L4-ajahangir.txt
+uli101_181ma22@matrix:~> ln linkto all
+ln: failed to create hard link `all': File exists
+uli101_181ma22@matrix:~> clear
+uli101_181ma22@matrix:~> ln -s all linkto
+ln: failed to create symbolic link `linkto': File exists
+uli101_181ma22@matrix:~> ln -s linkto all
+ln: failed to create symbolic link `all': File exists
+uli101_181ma22@matrix:~> clear
+uli101_181ma22@matrix:~> ls
+Acceptable-Use-Policy  catMe   first        output            scriptForDateTime         uli101-L5-ajahangir.txt
+Desktop                ch10l1  first.brk    pathabsolute      short                     uli101-L6-ajahangir.txt
+Documents              ch8l2   linkto       pizza             uli101-L1-ajahangir.txt   uli101-L7-ajahangir.txt
+Test.sh                code.c  longListing  pizzaCPY          uli101-L10-ajahangir.txt  uli101-L8-ajahangir.txt
+all                    days    ls.out       practice_rename   uli101-L2-ajahangir.txt   uli101-L9-ajahangir.txt
+bin                    dog     my file      practice_renamed  uli101-L3-ajahangir.txt   uli101combined
+brkAddScript           file    my file.brk  prog              uli101-L4-ajahangir.txt
+uli101_181ma22@matrix:~> cat linkto
+#!/bin/bash
+#this script will display info
+echo "name of calling program : $0"
+echo "Individual commands : $1-$n"
+echo "all positional parameters: $*"
+echo "Number of positional parameters: $#"
+uli101_181ma22@matrix:~> cat all
+#!/bin/bash
+#this script will display info
+echo "name of calling program : $0"
+echo "Individual commands : $1-$n"
+echo "all positional parameters: $*"
+echo "Number of positional parameters: $#"
+uli101_181ma22@matrix:~> rm linkto
+uli101_181ma22@matrix:~> cat all
+#!/bin/bash
+#this script will display info
+echo "name of calling program : $0"
+echo "Individual commands : $1-$n"
+echo "all positional parameters: $*"
+echo "Number of positional parameters: $#"
+uli101_181ma22@matrix:~> ln -s all linkto
+uli101_181ma22@matrix:~> clear
+uli101_181ma22@matrix:~> ls
+Acceptable-Use-Policy  catMe   first        output            scriptForDateTime         uli101-L5-ajahangir.txt
+Desktop                ch10l1  first.brk    pathabsolute      short                     uli101-L6-ajahangir.txt
+Documents              ch8l2   linkto       pizza             uli101-L1-ajahangir.txt   uli101-L7-ajahangir.txt
+Test.sh                code.c  longListing  pizzaCPY          uli101-L10-ajahangir.txt  uli101-L8-ajahangir.txt
+all                    days    ls.out       practice_rename   uli101-L2-ajahangir.txt   uli101-L9-ajahangir.txt
+bin                    dog     my file      practice_renamed  uli101-L3-ajahangir.txt   uli101combined
+brkAddScript           file    my file.brk  prog              uli101-L4-ajahangir.txt
+uli101_181ma22@matrix:~> #============================================================#
+uli101_181ma22@matrix:~> ./linkto arg1 arg2
+name of calling program : ./linkto
+Individual commands : arg1-
+all positional parameters: arg1 arg2
+Number of positional parameters: 2
+uli101_181ma22@matrix:~> vim myname
+uli101_181ma22@matrix:~> chmod 700
+chmod: missing operand after `700'
+Try `chmod --help' for more information.
+uli101_181ma22@matrix:~> chmod 700 myname
+uli101_181ma22@matrix:~> ./myname
+Enter your name: Abdul
+Hello Abdul
+uli101_181ma22@matrix:~> ./myname
+Enter your name: Abdul Rehman
+Hello Abdul Rehman
+uli101_181ma22@matrix:~> cp myname myname2
+uli101_181ma22@matrix:~> vim myname
+uli101_181ma22@matrix:~> vim my
+my file      my file.brk  myname       myname2
+uli101_181ma22@matrix:~> vim myname2
+uli101_181ma22@matrix:~> chmod myname2
+chmod: missing operand after `myname2'
+Try `chmod --help' for more information.
+uli101_181ma22@matrix:~> chmod 700 myname2
+uli101_181ma22@matrix:~> ./myname
+Enter your name: Abdul
+Hello Abdul
+uli101_181ma22@matrix:~> ./myname2
+Abdul Rehman
+uli101_181ma22@matrix:~> cat PID.name
+Abdul Rehman
+uli101_181ma22@matrix:~> vim myname2
+uli101_181ma22@matrix:~> clear
+uli101_181ma22@matrix:~> ls
+Acceptable-Use-Policy  catMe   first.brk    output             short                     uli101-L7-ajahangir.txt
+Desktop                ch10l1  linkto       pathabsolute       uli101-L1-ajahangir.txt   uli101-L8-ajahangir.txt
+^[[>0;136;0c^[[>0;136;0c^[[>0;136;0cisting  pizza              uli101-L10-ajahangir.txt  uli101-L9-ajahangir.txt
+PID.name               code.c  ls.out       pizzaCPY           uli101-L2-ajahangir.txt   uli101combined
+Test.sh                days    my file      practice_rename    uli101-L3-ajahangir.txt
+all                    dog     my file.brk  practice_renamed   uli101-L4-ajahangir.txt
+bin                    file    myname       prog               uli101-L5-ajahangir.txt
+brkAddScript           first   myname2      scriptForDateTime  uli101-L6-ajahangir.txt
+uli101_181ma22@matrix:~> ./myname2
+Abdul Rehman
+uli101_181ma22@matrix:~> ls
+27201.name             brkAddScript  first        myname2           scriptForDateTime         uli101-L6-ajahangir.txt
+Acceptable-Use-Policy  catMe         first.brk    output            short                     uli101-L7-ajahangir.txt
+Desktop                ch10l1        linkto       pathabsolute      uli101-L1-ajahangir.txt   uli101-L8-ajahangir.txt
+Documents              ch8l2         longListing  pizza             uli101-L10-ajahangir.txt  uli101-L9-ajahangir.txt
+PID.name               code.c        ls.out       pizzaCPY          uli101-L2-ajahangir.txt   uli101combined
+Test.sh                days          my file      practice_rename   uli101-L3-ajahangir.txt
+all                    dog           my file.brk  practice_renamed  uli101-L4-ajahangir.txt
+bin                    file          myname       prog              uli101-L5-ajahangir.txt
+uli101_181ma22@matrix:~> file *.name
+27201.name: ASCII text
+PID.name:   ASCII text
+uli101_181ma22@matrix:~> cat 27201.name
+Abdul Rehman
+uli101_181ma22@matrix:~> #it works
+uli101_181ma22@matrix:~> vim looper
+uli101_181ma22@matrix:~> chmod 700 looper
+uli101_181ma22@matrix:~> ./looper argument1 argu2 argu3 argu4
+argument1
+argu2
+argu3
+argu4
+uli101_181ma22@matrix:~> vim looper2
+uli101_181ma22@matrix:~> chmod 700 looper2; ./looper2
+argu1
+argu2
+argu3
+argu4
+uli101_181ma22@matrix:~> #Complete from Q7 later!
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Tue 03 Apr 2018 11:32:17 AM EDT
+Script started on Fri 06 Apr 2018 12:06:03 PM EDT
+uli101_181ma22@matrix:~> vim echomyvar
+uli101_181ma22@matrix:~> chmod 700 echomyvar
+uli101_181ma22@matrix:~> cat echomyvar
+#!/bin/bash
+#this script will display PID number of process running the script
+echo "PID Number of this process is $$"
+#value of variable myvar
+Echo "Value of variable myvar is : $myvar"
+uli101_181ma22@matrix:~> ./echomyvar
+PID Number of this process is 27538
+./echomyvar: line 5: Echo: command not found
+uli101_181ma22@matrix:~> vim echomyvar
+uli101_181ma22@matrix:~> ./echomyvar
+PID Number of this process is 27666
+Value of variable myvar is :
+uli101_181ma22@matrix:~> echo "$$"
+26365
+uli101_181ma22@matrix:~> #interactive shell and the script are diffrent processes since their PID  numbers are not same
+uli101_181ma22@matrix:~> myvar=10
+uli101_181ma22@matrix:~> echo "$myvar"
+10
+uli101_181ma22@matrix:~> ./echomyvar
+PID Number of this process is 28226
+Value of variable myvar is :
+uli101_181ma22@matrix:~> #value of myvar inside script is still not same because its inot set inside the script, but just in the shell
+uli101_181ma22@matrix:~> export myvar=5
+uli101_181ma22@matrix:~> ./echomyvar
+PID Number of this process is 29549
+Value of variable myvar is : 5
+uli101_181ma22@matrix:~> #variable exported
+uli101_181ma22@matrix:~> echo $$
+26365
+uli101_181ma22@matrix:~> declare -x
+declare -x ALSA_CONFIG_PATH="/etc/alsa-pulse.conf"
+declare -x ANT_HOME="/usr/local/ant"
+declare -x COLORTERM="1"
+declare -x CONFIG_SITE="/usr/share/site/i686-pc-linux-gnu"
+declare -x CPU="i686"
+declare -x CSHEDIT="emacs"
+declare -x CVS_RSH="ssh"
+declare -x DISPLAY="localhost:10.0"
+declare -x FROM_HEADER="matrix.senecac.on.ca"
+declare -x GPG_TTY="/dev/pts/11"
+declare -x G_BROKEN_FILENAMES="1"
+declare -x G_FILENAME_ENCODING="@locale,UTF-8,ISO-8859-15,CP1252"
+declare -x HISTSIZE="9999"
+declare -x HOME="/home/uli101_181ma22"
+declare -x HOST="matrix"
+declare -x HOSTNAME="matrix"
+declare -x HOSTTYPE="i386"
+declare -x INPUTRC="/home/uli101_181ma22/.inputrc"
+declare -x JAVA_BINDIR="/usr/java/jdk/bin"
+declare -x JAVA_HOME="/usr/java/jdk"
+declare -x JAVA_ROOT="/usr/java/jdk"
+declare -x JDK_HOME="/usr/java/jdk"
+declare -x JRE_HOME="/usr/java/jdk/jre"
+declare -x LANG="en_US.UTF-8"
+declare -x LC_COLLATE="C"
+declare -x LD_LIBRARY_PATH="/usr/lib/mpi/gcc/openmpi/lib:/usr/local/gcc/7.2.0/lib:/opt/oracle12c/instantclient_12_1:/usr/local/gcc/gsl-2.4/lib"
+declare -x LESS="-M -I -R"
+declare -x LESSCLOSE="lessclose.sh %s %s"
+declare -x LESSKEY="/etc/lesskey.bin"
+declare -x LESSOPEN="lessopen.sh %s"
+declare -x LESS_ADVANCED_PREPROCESSOR="no"
+declare -x LOGNAME="uli101_181ma22"
+declare -x LS_COLORS="no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:"
+declare -x LS_OPTIONS="-N --color=tty -T 0"
+declare -x MACHTYPE="i686-suse-linux"
+declare -x MAIL="/var/mail/uli101_181ma22"
+declare -x MANPATH="/usr/lib/mpi/gcc/openmpi/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man"
+declare -x MINICOM="-c on"
+declare -x MORE="-sl"
+declare -x NNTPSERVER="news"
+declare -x OLDPWD
+declare -x ORACLE_BASE="/opt/oracle12c"
+declare -x ORACLE_HOME="/opt/oracle12c/instantclient_12_1"
+declare -x ORACLE_SID="neptune"
+declare -x OSTYPE="linux"
+declare -x PAGER="less"
+declare -x PATH="/home/uli101/bin:.:/usr/lib/mpi/gcc/openmpi/bin:/home/uli101_181ma22/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/usr/local/ant/bin:/usr/java/jdk/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/oracle12c/instantclient_12_1:/opt/oracle12c/instantclient_12_1"
+declare -x PROFILEREAD="true"
+declare -x PWD="/home/uli101_181ma22"
+declare -x PYTHONSTARTUP="/etc/pythonstart"
+declare -x QT_SYSTEM_DIR="/usr/share/desktop-data"
+declare -x SDK_HOME="/usr/java/jdk"
+declare -x SDL_AUDIODRIVER="pulse"
+declare -x SHELL="/bin/bash"
+declare -x SHLVL="2"
+declare -x SSH_CLIENT="10.35.19.159 57237 22"
+declare -x SSH_CONNECTION="10.35.19.159 57237 192.168.1.53 22"
+declare -x SSH_TTY="/dev/pts/8"
+declare -x TEMP="/tmp"
+declare -x TERM="xterm"
+declare -x TMPDIR="/tmp"
+declare -x TNS_ADMIN="/opt/oracle12c/instantclient_12_1"
+declare -x USER="uli101_181ma22"
+declare -x WINDOWMANAGER="/usr/bin/startkde"
+declare -x XAUTHLOCALHOSTNAME="matrix"
+declare -x XDG_CONFIG_DIRS="/etc/xdg"
+declare -x XDG_DATA_DIRS="/usr/share"
+declare -x XDG_RUNTIME_DIR="/run/user/uli101_181ma22"
+declare -x XDG_SESSION_ID="161"
+declare -x XKEYSYMDB="/usr/X11R6/lib/X11/XKeysymDB"
+declare -x XNLSPATH="/usr/share/X11/nls"
+declare -x myvar="5"
+uli101_181ma22@matrix:~> clear
+uli101_181ma22@matrix:~> export|grep "myvar"
+declare -x myvar="5"
+uli101_181ma22@matrix:~> declare -x myvar
+uli101_181ma22@matrix:~> export -n myvar
+uli101_181ma22@matrix:~> ./echomyvar
+PID Number of this process is 29996
+Value of variable myvar is :
+uli101_181ma22@matrix:~> #variable value removed
+uli101_181ma22@matrix:~> unset myvar
+uli101_181ma22@matrix:~> ./echomyvar
+PID Number of this process is 30277
+Value of variable myvar is :
+uli101_181ma22@matrix:~> echo "$myvar"
+
+uli101_181ma22@matrix:~> #removed from both
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Fri 06 Apr 2018 12:33:17 PM EDT
+uli101_181ma22@matrix:~> 0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c
+
+

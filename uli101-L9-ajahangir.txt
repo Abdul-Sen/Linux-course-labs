@@ -1,0 +1,49 @@
+uli101_181ma22@matrix:~> cat uli101-L9-ajahangir.txt
+Script started on Thu 29 Mar 2018 05:37:45 PM EDT
+uli101_181ma22@matrix:~> myname="Abdul Rehman"
+uli101_181ma22@matrix:~> echo $myname
+Abdul Rehman
+uli101_181ma22@matrix:~> echo "$myname"
+Abdul Rehman
+uli101_181ma22@matrix:~> echo '$myname'
+$myname
+uli101_181ma22@matrix:~> readonly myname
+uli101_181ma22@matrix:~> myname=Alex
+bash: myname: readonly variable
+uli101_181ma22@matrix:~> #does not let change anymore
+uli101_181ma22@matrix:~> echo $HOME
+/home/uli101_181ma22
+uli101_181ma22@matrix:~> echo ~
+/home/uli101_181ma22
+uli101_181ma22@matrix:~> #both have same value so proved
+uli101_181ma22@matrix:~> echo $PATH
+/home/uli101/bin:.:/usr/lib/mpi/gcc/openmpi/bin:/home/uli101_181ma22/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/usr/local/ant/bin:/usr/java/jdk/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/oracle12c/instantclient_12_1:/opt/oracle12c/instantclient_12_1
+uli101_181ma22@matrix:~> echo $PATH
+/home/uli101/bin:.:/usr/lib/mpi/gcc/openmpi/bin:/home/uli101_181ma22/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/usr/local/ant/bin:/usr/java/jdk/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/oracle12c/instantclient_12_1:/opt/oracle12c/instantclient_12_1
+uli101_181ma22@matrix:~> cat $PATH
+cat: /home/uli101/bin:.:/usr/lib/mpi/gcc/openmpi/bin:/home/uli101_181ma22/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/usr/local/ant/bin:/usr/java/jdk/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/oracle12c/instantclient_12_1:/opt/oracle12c/instantclient_12_1: No such file or directory
+uli101_181ma22@matrix:~> export PATH=/usr/local/bin/:/bin/:/usr/bin/:~/bin/
+uli101_181ma22@matrix:~> # this allows me to place my executables in ~/bin and run them easily
+uli101_181ma22@matrix:~> date
+Thu Mar 29 17:43:38 EDT 2018
+uli101_181ma22@matrix:~> PS1="$ "
+$ #done
+$ vim scriptForDateTime
+$ #lets test our script
+$ chmod 700 scriptForDateTime
+$ ./scriptForDateTime
+date
+uli101_181ma22
+/usr/local/bin/:/bin/:/usr/bin/:/home/uli101_181ma22/bin/
+$ #oops, let me change something really quick
+$ vim scriptForDateTime
+$ ./scriptForDateTime
+date
+uli101_181ma22
+Value of $PATH=/usr/local/bin/:/bin/:/usr/bin/:/home/uli101_181ma22/bin/
+$ #much better
+$ exit
+exit
+
+Script done on Thu 29 Mar 2018 05:49:58 PM EDT
+^[[>0;136;0c^[[>0;136;0culi101_181ma22@matrix:~> 0;136;0c0;136;0c

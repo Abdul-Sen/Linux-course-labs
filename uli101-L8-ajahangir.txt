@@ -1,0 +1,164 @@
+
+Script started on Tue 27 Mar 2018 01:57:41 PM EDT
+uli101_181ma22@matrix:~> vi short
+uli101_181ma22@matrix:~> cat short
+echo 'hi there'
+uli101_181ma22@matrix:~> ls -l
+total 1868
+-rw-r--r-- 1 root           root    13957 Jan 15 15:13 Acceptable-Use-Policy
+drwxr-xr-x 3 uli101_181ma22 users      90 Mar 27 12:28 Desktop
+drwx------ 2 uli101_181ma22 users      23 Jan 15 15:13 Documents
+-rwxrw---- 1 uli101_181ma22 users      11 Feb 13 19:56 Test.sh
+drwxr-xr-x 2 uli101_181ma22 users       6 Jan 15 15:13 bin
+-rw-r--r-- 1 uli101_181ma22 users      37 Mar 27 13:40 catMe
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 13:57 ch8l1
+-rw-r--r-- 1 uli101_181ma22 users      66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users      57 Mar 27 13:51 days
+-rw-r--r-- 1 uli101_181ma22 users       8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users  234478 Mar 27 13:55 longListing
+-rw-r--r-- 1 uli101_181ma22 users     400 Mar 27 13:43 ls.out
+-rw-r--r-- 1 uli101_181ma22 users     203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users     157 Feb 11 14:33 practice_renamed
+-rwxr-xr-x 1 uli101_181ma22 users    9493 Mar  6 16:16 prog
+-rw-r--r-- 1 uli101_181ma22 users      16 Mar 27 13:59 short
+-rw-r--r-- 1 uli101_181ma22 users    5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users 1539033 Mar 27 13:32 uli101-L5-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    7147 Mar 27 13:55 uli101-L6-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+uli101_181ma22@matrix:~> ls -l short
+-rw-r--r-- 1 uli101_181ma22 users 16 Mar 27 13:59 short
+uli101_181ma22@matrix:~> chmod 774 short
+uli101_181ma22@matrix:~> ls -l
+total 1868
+-rw-r--r-- 1 root           root    13957 Jan 15 15:13 Acceptable-Use-Policy
+drwxr-xr-x 3 uli101_181ma22 users      90 Mar 27 12:28 Desktop
+drwx------ 2 uli101_181ma22 users      23 Jan 15 15:13 Documents
+-rwxrw---- 1 uli101_181ma22 users      11 Feb 13 19:56 Test.sh
+drwxr-xr-x 2 uli101_181ma22 users       6 Jan 15 15:13 bin
+-rw-r--r-- 1 uli101_181ma22 users      37 Mar 27 13:40 catMe
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 13:57 ch8l1
+-rw-r--r-- 1 uli101_181ma22 users      66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users      57 Mar 27 13:51 days
+-rw-r--r-- 1 uli101_181ma22 users       8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users  234478 Mar 27 13:55 longListing
+-rw-r--r-- 1 uli101_181ma22 users     400 Mar 27 13:43 ls.out
+-rw-r--r-- 1 uli101_181ma22 users     203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users     157 Feb 11 14:33 practice_renamed
+-rwxr-xr-x 1 uli101_181ma22 users    9493 Mar  6 16:16 prog
+-rwxrwxr-- 1 uli101_181ma22 users      16 Mar 27 13:59 short
+-rw-r--r-- 1 uli101_181ma22 users    5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users 1539033 Mar 27 13:32 uli101-L5-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    7147 Mar 27 13:55 uli101-L6-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+uli101_181ma22@matrix:~> ./short
+hi there
+uli101_181ma22@matrix:~> #The script ran as intended
+uli101_181ma22@matrix:~> vi short
+uli101_181ma22@matrix:~> cat short
+#!/bin/bash
+echo 'hi there'
+
+uli101_181ma22@matrix:~> #now let us execute again
+uli101_181ma22@matrix:~> ./short
+hi there
+uli101_181ma22@matrix:~> vi short
+uli101_181ma22@matrix:~> cat short
+#!/bin/bash
+echo 'hi there'
+#this script prints out "hi there"
+uli101_181ma22@matrix:~> ./short
+hi there
+uli101_181ma22@matrix:~> vi first
+uli101_181ma22@matrix:~> cat first
+echo "this file was called by typing $1"
+#This script tells us the first argument sent to the command line
+uli101_181ma22@matrix:~> ls -l first
+-rw-r--r-- 1 uli101_181ma22 users 107 Mar 27 14:19 first
+uli101_181ma22@matrix:~> chmod 744 first
+uli101_181ma22@matrix:~> ./first
+this file was called by typing
+uli101_181ma22@matrix:~> ./first this
+this file was called by typing this
+uli101_181ma22@matrix:~> # so the word "this " is the $1 positional para
+uli101_181ma22@matrix:~> vi first
+uli101_181ma22@matrix:~> cat first
+#!/bin/bash
+echo "this file was called by typing $1"
+#This script tells us thevi brkAddScript
+uli101_181ma22@matrix:~> cat brkAddScript
+#!/bin/bash
+#This script takes arg 1 and creates a copy that has .brk extension at the end
+cp "$1" "$1".brk
+uli101_181ma22@matrix:~> chmod 744 brkAddScript
+uli101_181ma22@matrix:~> ls -l|sort
+-rw-r--r-- 1 root           root    13957 Jan 15 15:13 Acceptable-Use-Policy
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 13:57 ch8l1
+-rw-r--r-- 1 uli101_181ma22 users       8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users      37 Mar 27 13:40 catMe
+-rw-r--r-- 1 uli101_181ma22 users      57 Mar 27 13:51 days
+-rw-r--r-- 1 uli101_181ma22 users      66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users     157 Feb 11 14:33 practice_renamed
+-rw-r--r-- 1 uli101_181ma22 users     203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users     400 Mar 27 13:43 ls.out
+-rw-r--r-- 1 uli101_181ma22 users    5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    7147 Mar 27 13:55 uli101-L6-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users  234478 Mar 27 13:55 longListing
+-rw-r--r-- 1 uli101_181ma22 users 1539033 Mar 27 13:32 uli101-L5-ajahangir.txt
+-rwxr--r-- 1 uli101_181ma22 users     108 Mar 27 14:33 brkAddScript
+-rwxr--r-- 1 uli101_181ma22 users     119 Mar 27 14:24 first
+-rwxr-xr-x 1 uli101_181ma22 users    9493 Mar  6 16:16 prog
+-rwxrw---- 1 uli101_181ma22 users      11 Feb 13 19:56 Test.sh
+-rwxrwxr-- 1 uli101_181ma22 users      63 Mar 27 14:03 short
+drwx------ 2 uli101_181ma22 users      23 Jan 15 15:13 Documents
+drwxr-xr-x 2 uli101_181ma22 users       6 Jan 15 15:13 bin
+drwxr-xr-x 3 uli101_181ma22 users      90 Mar 27 12:28 Desktop
+total 1876
+uli101_181ma22@matrix:~> ./brkAddScript first
+uli101_181ma22@matrix:~> ls -l|sort
+-rw-r--r-- 1 root           root    13957 Jan 15 15:13 Acceptable-Use-Policy
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 13:57 ch8l1
+-rw-r--r-- 1 uli101_181ma22 users       8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users      37 Mar 27 13:40 catMe
+-rw-r--r-- 1 uli101_181ma22 users      57 Mar 27 13:51 days
+-rw-r--r-- 1 uli101_181ma22 users      66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users     157 Feb 11 14:33 practice_renamed
+-rw-r--r-- 1 uli101_181ma22 users     203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users     400 Mar 27 13:43 ls.out
+-rw-r--r-- 1 uli101_181ma22 users    5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    7147 Mar 27 13:55 uli101-L6-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users  234478 Mar 27 13:55 longListing
+-rw-r--r-- 1 uli101_181ma22 users 1539033 Mar 27 13:32 uli101-L5-ajahangir.txt
+-rwxr--r-- 1 uli101_181ma22 users     108 Mar 27 14:33 brkAddScript
+-rwxr--r-- 1 uli101_181ma22 users     119 Mar 27 14:24 first
+-rwxr--r-- 1 uli101_181ma22 users     119 Mar 27 14:34 first.brk
+-rwxr-xr-x 1 uli101_181ma22 users    9493 Mar  6 16:16 prog
+-rwxrw---- 1 uli101_181ma22 users      11 Feb 13 19:56 Test.sh
+-rwxrwxr-- 1 uli101_181ma22 users      63 Mar 27 14:03 short
+drwx------ 2 uli101_181ma22 users      23 Jan 15 15:13 Documents
+drwxr-xr-x 2 uli101_181ma22 users       6 Jan 15 15:13 bin
+drwxr-xr-x 3 uli101_181ma22 users      90 Mar 27 12:28 Desktop
+total 1880
+uli101_181ma22@matrix:~> #as you can see, .brk is now in the listing
+uli101_181ma22@matrix:~> #Q8- creating a file with space in it and sending it to our brk script
+uli101_181ma22@matrix:~> touch "my file"
+uli101_181ma22@matrix:~> ./brkAddScript "my file"
+uli101_181ma22@matrix:~> ls my*
+my file  my file.brk
+uli101_181ma22@matrix:~> #END
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Tue 27 Mar 2018 02:39:50 PM EDT
+^[[>0;136;0c^[[>0;136;0c^[[>0;136;0c^[[>0;136;0c^[[>0;136;0c^[[>0;136;0culi101_181ma22@matrix:~> 0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c0;136;0c

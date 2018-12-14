@@ -1,0 +1,180 @@
+
+uli101_181ma22@matrix:~> cat uli101-L5-ajahangir.txt
+Script started on Tue 27 Mar 2018 12:11:18 PM EDT
+uli101_181ma22@matrix:~> #in Linux, we consider token as a sequance of nonblank characters (basically a word)
+uli101_181ma22@matrix:~> #an argument is a token that the command acts on (e.g cp, filename if the command acts on the file, etc)
+uli101_181ma22@matrix:~> #an option is an extension of a command that modifies the command. e.g ls is a command, but ls-l is a command that is being modified by an option or "switch"
+uli101_181ma22@matrix:~> # options start with '-' whereas arguments dont need those to be interpreted by command line
+uli101_181ma22@matrix:~> #Q2- ls -l /tmp /var/tmp. in this example, ls is arg 0, -l is arg1, /tmp is arg2, /var/tmp is arg3
+uli101_181ma22@matrix:~> #Q2-ls -l is an example of one option and one argument, -l is an example of an option
+uli101_181ma22@matrix:~> ls -r
+uli101-L7-ajahangir.txt  tmp               pizza   days         bin        Desktop
+uli101-L3-ajahangir.txt  prog              output  code.c       Test.sh    Acceptable-Use-Policy
+uli101-L1-ajahangir.txt  practice_renamed  file    ch5L1script  Documents
+uli101_181ma22@matrix:~> ls -rl
+total 116
+-rw-r--r-- 1 uli101_181ma22 users 37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users  5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users  5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    42 Mar 22 16:36 tmp
+-rwxr-xr-x 1 uli101_181ma22 users  9493 Mar  6 16:16 prog
+-rw-r--r-- 1 uli101_181ma22 users   157 Feb 11 14:33 practice_renamed
+-rw-r--r-- 1 uli101_181ma22 users   243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users   203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users    49 Feb 11 14:39 days
+-rw-r--r-- 1 uli101_181ma22 users    66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users     0 Mar 27 12:11 ch5L1script
+drwxr-xr-x 2 uli101_181ma22 users     6 Jan 15 15:13 bin
+-rwxrw---- 1 uli101_181ma22 users    11 Feb 13 19:56 Test.sh
+drwx------ 2 uli101_181ma22 users    23 Jan 15 15:13 Documents
+drwxr-xr-x 2 uli101_181ma22 users    74 Jan 15 15:13 Desktop
+-rw-r--r-- 1 root           root  13957 Jan 15 15:13 Acceptable-Use-Policy
+uli101_181ma22@matrix:~> cp -r Documents ./Desktop
+uli101_181ma22@matrix:~> ls -rl
+total 116
+-rw-r--r-- 1 uli101_181ma22 users 37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users  5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users  5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    42 Mar 22 16:36 tmp
+-rwxr-xr-x 1 uli101_181ma22 users  9493 Mar  6 16:16 prog
+-rw-r--r-- 1 uli101_181ma22 users   157 Feb 11 14:33 practice_renamed
+-rw-r--r-- 1 uli101_181ma22 users   243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users   203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users    49 Feb 11 14:39 days
+-rw-r--r-- 1 uli101_181ma22 users    66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users     0 Mar 27 12:11 ch5L1script
+drwxr-xr-x 2 uli101_181ma22 users     6 Jan 15 15:13 bin
+-rwxrw---- 1 uli101_181ma22 users    11 Feb 13 19:56 Test.sh
+drwx------ 2 uli101_181ma22 users    23 Jan 15 15:13 Documents
+drwxr-xr-x 3 uli101_181ma22 users    90 Mar 27 12:28 Desktop
+-rw-r--r-- 1 root           root  13957 Jan 15 15:13 Acceptable-Use-Policy
+uli101_181ma22@matrix:~> ls Desktop
+Documents  Firefox.desktop  Thunderbird.desktop  trash.desktop
+uli101_181ma22@matrix:~> head -3 pizza
+PIZZA
+
+Pizza is an oven-baked, flat, round bread
+uli101_181ma22@matrix:~> tail -4 pizza
+
+
+
+
+uli101_181ma22@matrix:~> cat pizza
+PIZZA
+
+Pizza is an oven-baked, flat, round bread
+typically covered with a tomato sauce, cheese
+and various toppings. Pizza was
+invented in Naples, and the dish has
+since become popular in many parts of the world
+(from Wikipedia)
+
+
+
+
+
+
+
+
+
+
+
+
+
+uli101_181ma22@matrix:~> cat --version
+cat (GNU coreutils) 8.14
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Torbjörn Granlund and Richard M. Stallman.
+uli101_181ma22@matrix:~> #Q4 - buildin commands are "native to the shell" or build into the shell. This means that these commands are usually faster, and can affect the shell envirnoment. Let us see which commands are build into BASH
+uli101_181ma22@matrix:~> man buildin
+No manual entry for buildin
+uli101_181ma22@matrix:~> # we can use info bash shell builtin or man builtin
+uli101_181ma22@matrix:~> man builtin
+No manual entry for builtin
+uli101_181ma22@matrix:~> man cat
+Man: find all matching manual pages (set MAN_POSIXLY_CORRECT to avoid this)
+ * cat (1)
+   cat (1p)
+Man: What manual page do you want?
+Man: q
+uli101_181ma22@matrix:~>
+uli101_181ma22@matrix:~> man builtins
+No manual entry for builtins
+uli101_181ma22@matrix:~> info bash shell builtin
+uli101_181ma22@matrix:~> #from the list, we have used a number of commands including bg, echo,exit,fg,pwd,,cd and so on
+uli101_181ma22@matrix:~> #Q5-we can use !! to repeat the previous command, in this case, cat
+uli101_181ma22@matrix:~> cat hi there
+cat: hi: No such file or directory
+cat: there: No such file or directory
+uli101_181ma22@matrix:~> echo hi there
+hi there
+uli101_181ma22@matrix:~> ^hi^hello^
+echo hello there
+hello there
+uli101_181ma22@matrix:~> #Above is example of how to edit echo
+uli101_181ma22@matrix:~> #Q6- Pathname expansion
+uli101_181ma22@matrix:~> ls /usr/bin/[ab]
+ls: cannot access /usr/bin/[ab]: No such file or directory
+uli101_181ma22@matrix:~> ls /usr/bin/*[ab]
+/usr/bin/Xvfb               /usr/bin/erb        /usr/bin/llvm-ranlib         /usr/bin/pbmtomda          /usr/bin/snmpdelta
+/usr/bin/anjuta             /usr/bin/eu-ranlib  /usr/bin/llvm-stub           /usr/bin/pbmtonokia        /usr/bin/tagmedia
+/usr/bin/baobab             /usr/bin/extractbb  /usr/bin/lookbib             /usr/bin/pbmtoppa          /usr/bin/testrb
+/usr/bin/bmtoa              /usr/bin/findsmb    /usr/bin/lsusb               /usr/bin/pdb2mdb           /usr/bin/texlua
+/usr/bin/cervisia           /usr/bin/ftgamma    /usr/bin/lzma                /usr/bin/pdfthumb          /usr/bin/tkmib
+/usr/bin/checkmedia         /usr/bin/fulla      /usr/bin/m17n-db             /usr/bin/pfb2pfa           /usr/bin/toc2cddb
+/usr/bin/chkweb             /usr/bin/gdb        /usr/bin/mandb               /usr/bin/pfbtopfa          /usr/bin/ulqda
+/usr/bin/cleanup_digikamdb  /usr/bin/hp-fab     /usr/bin/manweb              /usr/bin/pnmgamma          /usr/bin/unlzma
+/usr/bin/clusterdb          /usr/bin/ikvmstub   /usr/bin/mattrib             /usr/bin/quota             /usr/bin/updatedb
+/usr/bin/config_data        /usr/bin/indxbib    /usr/bin/mergelib            /usr/bin/qvfb              /usr/bin/vacuumdb
+/usr/bin/createdb           /usr/bin/irb        /usr/bin/mkluatexfontdb      /usr/bin/ranlib            /usr/bin/vlna
+/usr/bin/crontab            /usr/bin/k3b        /usr/bin/msgattrib           /usr/bin/reindexdb         /usr/bin/wftopfa
+/usr/bin/deweb              /usr/bin/kleopatra  /usr/bin/mysql_install_db    /usr/bin/rpmdb             /usr/bin/wol-bootptab
+/usr/bin/dga                /usr/bin/krdb       /usr/bin/nepomukservicestub  /usr/bin/setJava           /usr/bin/xcmsdb
+/usr/bin/dia                /usr/bin/krfb       /usr/bin/nona                /usr/bin/showrgb           /usr/bin/xgamma
+/usr/bin/dijkstra           /usr/bin/lastb      /usr/bin/okteta              /usr/bin/simpana           /usr/bin/xrdb
+/usr/bin/dropdb             /usr/bin/liferea    /usr/bin/orca                /usr/bin/smp_rep_phy_sata
+/usr/bin/ebb                /usr/bin/lkbib      /usr/bin/pamtotga            /usr/bin/snmp-bridge-mib
+uli101_181ma22@matrix:~> #files starting with u
+uli101_181ma22@matrix:~> ls /usr/bin/*^[u]
+ls: cannot access /usr/bin/*^[u]: No such file or directory
+uli101_181ma22@matrix:~> ls /usr/bin/*^[u]
+ls: cannot access /usr/bin/*^[u]: No such file or directory
+uli101_181ma22@matrix:~> ls /usr/bin/[u]*
+/usr/bin/ucs2any            /usr/bin/uniconv     /usr/bin/unzip                    /usr/bin/utf8mex
+/usr/bin/udisks             /usr/bin/uniprint    /usr/bin/unzipsfx                 /usr/bin/utf8trans
+/usr/bin/udisks-tcp-bridge  /usr/bin/uniq        /usr/bin/update-desktop-database  /usr/bin/utmpdump
+/usr/bin/uic                /usr/bin/unix2dos    /usr/bin/update-mime-database     /usr/bin/uudecode
+/usr/bin/uic3               /usr/bin/unix2mac    /usr/bin/updatedb                 /usr/bin/uudepipe
+/usr/bin/uil                /usr/bin/unlink      /usr/bin/updateinfoxml2solv       /usr/bin/uuencode
+/usr/bin/ul                 /usr/bin/unlzma      /usr/bin/updmap                   /usr/bin/uuenpipe
+/usr/bin/ulockmgr_server    /usr/bin/unmunch     /usr/bin/updmap-sys               /usr/bin/uuidgen
+/usr/bin/ulqda              /usr/bin/unrar       /usr/bin/upower                   /usr/bin/uwmdump
+/usr/bin/umax_pp            /usr/bin/unshar      /usr/bin/uptime                   /usr/bin/uxterm
+/usr/bin/umbrello           /usr/bin/unshare     /usr/bin/urlgrabber               /usr/bin/uz
+/usr/bin/uncompress         /usr/bin/unsq        /usr/bin/usb-devices
+/usr/bin/unexpand           /usr/bin/unwrapdiff  /usr/bin/usbhid-dump
+/usr/bin/unflatten          /usr/bin/unxz        /usr/bin/users
+uli101_181ma22@matrix:~> #Now, files starting with un
+uli101_181ma22@matrix:~> ls /usr/bin/[u][n]*
+/usr/bin/uncompress  /usr/bin/uniprint  /usr/bin/unlink   /usr/bin/unshar      /usr/bin/unxz
+/usr/bin/unexpand    /usr/bin/uniq      /usr/bin/unlzma   /usr/bin/unshare     /usr/bin/unzip
+/usr/bin/unflatten   /usr/bin/unix2dos  /usr/bin/unmunch  /usr/bin/unsq        /usr/bin/unzipsfx
+/usr/bin/uniconv     /usr/bin/unix2mac  /usr/bin/unrar    /usr/bin/unwrapdiff
+uli101_181ma22@matrix:~> #files that are one char long
+uli101_181ma22@matrix:~> ls /usr/bin/?
+/usr/bin/X  /usr/bin/[  /usr/bin/w
+uli101_181ma22@matrix:~> ls .bash*
+.bash_history  .bashrc
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Tue 27 Mar 2018 01:32:30 PM EDT
+

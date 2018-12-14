@@ -1,0 +1,113 @@
+uli101_181ma22@matrix:~> cat uli101-L6-ajahangir.txt
+Script started on Tue 27 Mar 2018 01:35:05 PM EDT
+uli101_181ma22@matrix:~> #Q1
+uli101_181ma22@matrix:~> cat
+Hello Sir, this is an example of taking stdin from keyboard
+Hello Sir, this is an example of taking stdin from keyboard
+Now I will exit this by pressing ctrl+d
+Now I will exit this by pressing ctrl+d
+uli101_181ma22@matrix:~> #Q2- writing a message to a file using echo  and then dispaying it using cat
+uli101_181ma22@matrix:~> echo Hello, this is a message from a file >>catMe
+uli101_181ma22@matrix:~> cat <catMe
+Hello, this is a message from a file
+uli101_181ma22@matrix:~> #Q3
+uli101_181ma22@matrix:~> cat <catMe
+Hello, this is a message from a file
+uli101_181ma22@matrix:~> #Q4
+uli101_181ma22@matrix:~> ls -l >ls.out
+uli101_181ma22@matrix:~> cat ls.out
+total 1620
+-rw-r--r-- 1 root           root    13957 Jan 15 15:13 Acceptable-Use-Policy
+drwxr-xr-x 3 uli101_181ma22 users      90 Mar 27 12:28 Desktop
+drwx------ 2 uli101_181ma22 users      23 Jan 15 15:13 Documents
+-rwxrw---- 1 uli101_181ma22 users      11 Feb 13 19:56 Test.sh
+drwxr-xr-x 2 uli101_181ma22 users       6 Jan 15 15:13 bin
+-rw-r--r-- 1 uli101_181ma22 users      37 Mar 27 13:40 catMe
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 13:35 ch5l2
+-rw-r--r-- 1 uli101_181ma22 users      66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users      49 Feb 11 14:39 days
+-rw-r--r-- 1 uli101_181ma22 users       8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27  2018 ls.out
+-rw-r--r-- 1 uli101_181ma22 users     203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users     157 Feb 11 14:33 practice_renamed
+-rwxr-xr-x 1 uli101_181ma22 users    9493 Mar  6 16:16 prog
+-rw-r--r-- 1 uli101_181ma22 users    5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users 1539033 Mar 27 13:32 uli101-L5-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+uli101_181ma22@matrix:~> who >>ls.out
+uli101_181ma22@matrix:~> cat ls.out
+total 1620
+-rw-r--r-- 1 root           root    13957 Jan 15 15:13 Acceptable-Use-Policy
+drwxr-xr-x 3 uli101_181ma22 users      90 Mar 27 12:28 Desktop
+drwx------ 2 uli101_181ma22 users      23 Jan 15 15:13 Documents
+-rwxrw---- 1 uli101_181ma22 users      11 Feb 13 19:56 Test.sh
+drwxr-xr-x 2 uli101_181ma22 users       6 Jan 15 15:13 bin
+-rw-r--r-- 1 uli101_181ma22 users      37 Mar 27 13:40 catMe
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 13:35 ch5l2
+-rw-r--r-- 1 uli101_181ma22 users      66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users      49 Feb 11 14:39 days
+-rw-r--r-- 1 uli101_181ma22 users       8 Mar 15 14:47 file
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27  2018 ls.out
+-rw-r--r-- 1 uli101_181ma22 users     203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     243 Mar  7 10:38 pizza
+-rw-r--r-- 1 uli101_181ma22 users     157 Feb 11 14:33 practice_renamed
+-rwxr-xr-x 1 uli101_181ma22 users    9493 Mar  6 16:16 prog
+-rw-r--r-- 1 uli101_181ma22 users    5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users 1539033 Mar 27 13:32 uli101-L5-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+dammussa pts/0        2018-03-27 13:34 (10.43.108.137)
+uli101_181ma11 pts/1        2018-03-27 09:46 (cpe00fc8d249ae3-cm00fc8d249ae0.cpe.net.cable.rogers.com)
+uli101_181ma22 pts/3        2018-03-27 11:57 (10.43.102.177)
+nchaudhury pts/4        2018-03-27 10:59 (104.204.32.135)
+wkwong-hin-sang pts/6        2018-03-27 13:36 (10.43.110.188)
+sbhagavathi-appan pts/8        2018-03-27 12:35 (10.43.87.2)
+uli101_181ma22@matrix:~> #now doing who by using only one '>'
+uli101_181ma22@matrix:~> who >ls.out
+uli101_181ma22@matrix:~> cat ls.out
+dammussa pts/0        2018-03-27 13:34 (10.43.108.137)
+uli101_181ma11 pts/1        2018-03-27 09:46 (cpe00fc8d249ae3-cm00fc8d249ae0.cpe.net.cable.rogers.com)
+uli101_181ma22 pts/3        2018-03-27 11:57 (10.43.102.177)
+nchaudhury pts/4        2018-03-27 10:59 (104.204.32.135)
+wkwong-hin-sang pts/6        2018-03-27 13:36 (10.43.110.188)
+sbhagavathi-appan pts/8        2018-03-27 12:35 (10.43.87.2)
+uli101_181ma22@matrix:~> #it deleted all previous data
+uli101_181ma22@matrix:~> echo Monday >days
+uli101_181ma22@matrix:~> echo Tuesday>>days
+uli101_181ma22@matrix:~> echo Wednesday>>days
+uli101_181ma22@matrix:~> echo Thursday>>days
+uli101_181ma22@matrix:~> echo Friday>>days
+uli101_181ma22@matrix:~> echo Saturday>>days
+uli101_181ma22@matrix:~> echo Sunday>>days
+uli101_181ma22@matrix:~> cat days
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+uli101_181ma22@matrix:~> #reading cat in a sorted manner
+uli101_181ma22@matrix:~> cat days |sort
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+uli101_181ma22@matrix:~> cat days |grep T
+Tuesday
+Thursday
+uli101_181ma22@matrix:~> ls -l /usr/bin /sbin >>longListing &
+[1] 26827
+uli101_181ma22@matrix:~> #The command is running in the background
+[1]+  Done                    ls $LS_OPTIONS -l /usr/bin /sbin >> longListing
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Tue 27 Mar 2018 01:55:43 PM EDT

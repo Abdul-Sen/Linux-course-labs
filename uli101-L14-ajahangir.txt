@@ -1,0 +1,95 @@
+uli101_181ma22@matrix:~> cat uli101-L14-ajahangir.txt
+Script started on Thu 05 Apr 2018 01:38:20 PM EDT
+uli101_181ma22@matrix:~> LC_ALL=C
+uli101_181ma22@matrix:~> cat food
+tuna salad          2.25   100
+rare hamburger      2.50   500
+french fries        0.75   625
+tea bag              .20     0
+apple pie           2.75  1500
+milk shake          3      200
+potato chips        0.50    80
+uli101_181ma22@matrix:~> sort food
+apple pie           2.75  1500
+french fries        0.75   625
+milk shake          3      200
+potato chips        0.50    80
+rare hamburger      2.50   500
+tea bag              .20     0
+tuna salad          2.25   100
+uli101_181ma22@matrix:~> sort
+one
+two
+three
+one
+three
+two
+uli101_181ma22@matrix:~> sort
+a
+x
+l
+o
+q
+a
+l
+o
+q
+x
+uli101_181ma22@matrix:~> sort -r food
+tuna salad          2.25   100
+tea bag              .20     0
+rare hamburger      2.50   500
+potato chips        0.50    80
+milk shake          3      200
+french fries        0.75   625
+apple pie           2.75  1500
+uli101_181ma22@matrix:~> sort --key=2 food
+tea bag              .20     0
+potato chips        0.50    80
+french fries        0.75   625
+rare hamburger      2.50   500
+apple pie           2.75  1500
+tuna salad          2.25   100
+milk shake          3      200
+uli101_181ma22@matrix:~> sort --key=1 food
+apple pie           2.75  1500
+french fries        0.75   625
+milk shake          3      200
+potato chips        0.50    80
+rare hamburger      2.50   500
+tea bag              .20     0
+tuna salad          2.25   100
+uli101_181ma22@matrix:~> sort --key=2 food
+tea bag              .20     0
+potato chips        0.50    80
+french fries        0.75   625
+rare hamburger      2.50   500
+apple pie           2.75  1500
+tuna salad          2.25   100
+milk shake          3      200
+uli101_181ma22@matrix:~> #this sorts by word 2 e.g. bag, chips
+uli101_181ma22@matrix:~> sort -b food
+apple pie           2.75  1500
+french fries        0.75   625
+milk shake          3      200
+potato chips        0.50    80
+rare hamburger      2.50   500
+tea bag              .20     0
+tuna salad          2.25   100
+uli101_181ma22@matrix:~> #does not consider spaces as filed separaters
+uli101_181ma22@matrix:~> sort -n food >>calo
+uli101_181ma22@matrix:~> cat calo
+apple pie           2.75  1500
+french fries        0.75   625
+milk shake          3      200
+potato chips        0.50    80
+rare hamburger      2.50   500
+tea bag              .20     0
+tuna salad          2.25   100
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Thu 05 Apr 2018 01:47:47 PM EDT
+uli101_181ma22@matrix:~>

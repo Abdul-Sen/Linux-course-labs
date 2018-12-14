@@ -1,0 +1,34 @@
+uli101_181ma22@matrix:~> cat uli101-L7-ajahangir.txt
+Script started on Wed 07 Mar 2018 10:21:12 AM EST
+uli101_181ma22@matrix:~> vi pizza
+uli101_181ma22@matrix:~> cat pizza
+PIZZA
+
+Pizza is an oven-baked, flat, round bread
+typically covered with a tomato sauce, cheese
+and various toppings. Pizza was
+invented in Naples, and the dish has
+since become popular in many parts of the world
+(from Wikipedia)
+
+
+
+
+
+
+
+
+
+
+
+
+
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Wed 07 Mar 2018 10:39:12 AM EST
+^[[>0;136;0culi101_181ma22@matrix:~> 0;136;0c
+
+

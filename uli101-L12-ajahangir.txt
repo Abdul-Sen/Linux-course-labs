@@ -1,0 +1,208 @@
+uli101_181ma22@matrix:~> cat uli101-L12-ajahangir.txt
+Script started on Thu 05 Apr 2018 12:54:13 PM EDT
+uli101_181ma22@matrix:~> find /usr/bin -mtime 900
+uli101_181ma22@matrix:~> find /usr/bin -mtime -1200
+/usr/bin
+/usr/bin/cvpkgcheck
+/usr/bin/cvpkgchg
+/usr/bin/detect
+/usr/bin/cvpkgrm
+/usr/bin/simpana
+uli101_181ma22@matrix:~> find /usr/bin -mtime -1200|wc -l
+6
+uli101_181ma22@matrix:~> find -name 'c*'
+./catMe
+./ch8l2
+./ch10l1
+./.lnx155.a1/.reference/projects/backup/pictures/college
+./.lnx155.a1/.reference/projects/conf
+./code.c
+./commandRefLab1
+uli101_181ma22@matrix:~> find /bin -name 'c*'
+/bin/chvt
+/bin/cat
+/bin/cp
+/bin/chgrp
+/bin/csh
+/bin/chmod
+/bin/share/locale/ca
+/bin/share/locale/cs
+/bin/cpio
+/bin/chown
+/bin/clrunimap
+uli101_181ma22@matrix:~> find ~/ -type f -size -100
+/home/uli101_181ma22/Desktop/Firefox.desktop
+/home/uli101_181ma22/Desktop/Thunderbird.desktop
+/home/uli101_181ma22/Desktop/trash.desktop
+/home/uli101_181ma22/Desktop/Documents/.directory
+/home/uli101_181ma22/.gnu-emacs
+/home/uli101_181ma22/.config/akonadi/akonadiserverrc
+/home/uli101_181ma22/.bash_history
+/home/uli101_181ma22/.emacs
+/home/uli101_181ma22/.vimrc
+/home/uli101_181ma22/.inputrc
+/home/uli101_181ma22/Documents/.directory
+/home/uli101_181ma22/.dvipsrc
+/home/uli101_181ma22/.ssh/known_hosts
+/home/uli101_181ma22/.bashrc
+/home/uli101_181ma22/.profile
+/home/uli101_181ma22/Acceptable-Use-Policy
+/home/uli101_181ma22/.xim.template
+/home/uli101_181ma22/.xinitrc.template
+/home/uli101_181ma22/.rhosts
+/home/uli101_181ma22/.forward
+/home/uli101_181ma22/scriptForDateTime
+/home/uli101_181ma22/myname
+/home/uli101_181ma22/.Xauthority
+/home/uli101_181ma22/uli101-L6-ajahangir.txt
+/home/uli101_181ma22/pizza
+/home/uli101_181ma22/27201.name
+/home/uli101_181ma22/.kshrc_history
+/home/uli101_181ma22/uli101-L7-ajahangir.txt
+/home/uli101_181ma22/catMe
+/home/uli101_181ma22/first.brk
+/home/uli101_181ma22/my file.brk
+/home/uli101_181ma22/ch8l2
+/home/uli101_181ma22/dog
+/home/uli101_181ma22/.viminfo
+/home/uli101_181ma22/uli101-L1-ajahangir.txt
+/home/uli101_181ma22/days
+/home/uli101_181ma22/uli101-L9-ajahangir.txt
+/home/uli101_181ma22/looper
+/home/uli101_181ma22/practice_renamed
+/home/uli101_181ma22/ls.out
+/home/uli101_181ma22/short
+/home/uli101_181ma22/my file
+/home/uli101_181ma22/pathabsolute
+/home/uli101_181ma22/practice_rename
+/home/uli101_181ma22/uli101-L10-ajahangir.txt
+/home/uli101_181ma22/quizscript
+/home/uli101_181ma22/.history
+/home/uli101_181ma22/uli101-L3-ajahangir.txt
+/home/uli101_181ma22/myname2
+/home/uli101_181ma22/.nfs000000009835543500000002
+/home/uli101_181ma22/Test.sh
+/home/uli101_181ma22/looper2
+/home/uli101_181ma22/.lnx155.a1/.reference/projects/backup/pictures/white.log
+/home/uli101_181ma22/.lnx155.a1/.reference/projects/videos/brown.cpp
+/home/uli101_181ma22/.lnx155.a1/.reference/projects/videos/purple.html
+/home/uli101_181ma22/.lnx155.a1/.reference/projects/conf/blue.pdf
+/home/uli101_181ma22/.lnx155.a1/.reference/projects/conf/green.cpp
+/home/uli101_181ma22/.lnx155.a1/.reference/projects/conf/pink.log
+/home/uli101_181ma22/.lnx155.a1/.reference/projects/red.ogg
+/home/uli101_181ma22/.lnx155.a1/.reference/.uli101_181ma22.A.1
+/home/uli101_181ma22/.lnx155.a1/.reference/.uli101_181ma22.A
+/home/uli101_181ma22/.lnx155.a1/.reference/logs/documents/audio/black.conf
+/home/uli101_181ma22/.lnx155.a1/.reference/logs/yellow.txt
+/home/uli101_181ma22/.lnx155.a1/.reference/.uli101_181ma22.B.1
+/home/uli101_181ma22/.lnx155.a1/.reference/.uli101_181ma22.B
+/home/uli101_181ma22/.lnx155.a1/.reference/orange.c
+/home/uli101_181ma22/.lnx155.a1/.reference/.uli101_181ma22.C.1
+/home/uli101_181ma22/.lnx155.a1/.reference/a1.A
+/home/uli101_181ma22/.lnx155.a1/.reference/a1.B
+/home/uli101_181ma22/.lnx155.a1/.reference/a1.C
+/home/uli101_181ma22/.lnx155.a1/.reference/.uli101_181ma22.C
+/home/uli101_181ma22/all
+/home/uli101_181ma22/ifthen
+/home/uli101_181ma22/prog
+/home/uli101_181ma22/code.c
+/home/uli101_181ma22/file
+/home/uli101_181ma22/output
+/home/uli101_181ma22/first
+/home/uli101_181ma22/brkAddScript
+/home/uli101_181ma22/pizzaCPY
+/home/uli101_181ma22/PID.name
+/home/uli101_181ma22/commandRefLab1
+/home/uli101_181ma22/.it.search.swp
+uli101_181ma22@matrix:~> find /usr -type f |head -10
+/usr/local/httpd-2.2.26/htdocs/index.html
+/usr/local/httpd-2.2.26/modules/httpd.exp
+/usr/local/httpd-2.2.26/modules/libphp5.so
+/usr/local/httpd-2.2.26/cgi-bin/test-cgi
+/usr/local/httpd-2.2.26/cgi-bin/printenv
+/usr/local/httpd-2.2.26/manual/sections.html.ko.euc-kr
+/usr/local/httpd-2.2.26/manual/content-negotiation.html.ja.utf8
+/usr/local/httpd-2.2.26/manual/suexec.html.ko.euc-kr
+/usr/local/httpd-2.2.26/manual/new_features_2_2.html.tr.utf8
+/usr/local/httpd-2.2.26/manual/new_features_2_0.html.ko.euc-kr
+uli101_181ma22@matrix:~> find /bin -name '*s*h*' -type l
+/bin/ksh
+/bin/csh
+/bin/ksh93
+/bin/sh
+uli101_181ma22@matrix:~> find /bin -name '*s*h*' -type l|ls -l
+total 4920
+-rw-r--r-- 1 uli101_181ma22 users      13 Apr  3 11:15 27201.name
+-rw-r--r-- 1 root           root    13957 Jan 15 15:13 Acceptable-Use-Policy
+drwxr-xr-x 3 uli101_181ma22 users      90 Mar 27 12:28 Desktop
+drwx------ 2 uli101_181ma22 users      23 Jan 15 15:13 Documents
+-rw-r--r-- 1 uli101_181ma22 users      13 Apr  3 11:12 PID.name
+-rwxrw---- 1 uli101_181ma22 users      11 Feb 13 19:56 Test.sh
+-rwx------ 1 uli101_181ma22 users     194 Apr  3 10:41 all
+drwxr-xr-x 2 uli101_181ma22 users       6 Jan 15 15:13 bin
+-rwxr--r-- 1 uli101_181ma22 users     108 Mar 27 14:33 brkAddScript
+-rw-r--r-- 1 uli101_181ma22 users      37 Mar 27 13:40 catMe
+-rw-r--r-- 1 uli101_181ma22 users   80323 Apr  3 11:32 ch10l1
+-rw-r--r-- 1 uli101_181ma22 users   25145 Mar 27 17:04 ch8l2
+-rw-r--r-- 1 uli101_181ma22 users      66 Mar  6 16:17 code.c
+-rw-r--r-- 1 uli101_181ma22 users       0 Apr  5 12:54 commandRefLab1
+-rw-r--r-- 1 uli101_181ma22 users      57 Mar 29 17:00 days
+-r--r--r-- 1 uli101_181ma22 users       0 Mar 29 17:04 dog
+-rw-r--r-- 1 uli101_181ma22 users       8 Mar 15 14:47 file
+-rwxr--r-- 1 uli101_181ma22 users     119 Mar 27 14:24 first
+-rwxr--r-- 1 uli101_181ma22 users     119 Mar 27 14:34 first.brk
+-rwx------ 1 uli101_181ma22 users     125 Apr  4 13:32 ifthen
+lrwxrwxrwx 1 uli101_181ma22 users       3 Apr  3 10:44 linkto -> all
+-rw-r--r-- 1 uli101_181ma22 users  234478 Mar 27 13:55 longListing
+-rwx------ 1 uli101_181ma22 users      86 Apr  3 11:26 looper
+-rwx------ 1 uli101_181ma22 users      65 Apr  3 11:28 looper2
+-rw-r--r-- 1 uli101_181ma22 users     400 Mar 27 13:43 ls.out
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 14:36 my file
+-rw-r--r-- 1 uli101_181ma22 users       0 Mar 27 14:39 my file.brk
+-rwx------ 1 uli101_181ma22 users      55 Apr  3 10:53 myname
+-rwx------ 1 uli101_181ma22 users      42 Apr  3 11:14 myname2
+-rw-r--r-- 1 uli101_181ma22 users     203 Mar 15 14:34 output
+-rw-r--r-- 1 uli101_181ma22 users     292 Mar 27 17:03 pathabsolute
+-rw-r--r-- 1 uli101_181ma22 users     242 Mar 27 18:16 pizza
+-rw-r--r-- 1 uli101_181ma22 users     242 Mar 27 18:27 pizzaCPY
+-rw-r--r-- 1 uli101_181ma22 users     143 Mar 29 16:56 practice_rename
+-rw-r--r-- 1 uli101_181ma22 users     157 Feb 11 14:33 practice_renamed
+-rwxr-xr-x 1 uli101_181ma22 users    9493 Mar  6 16:16 prog
+-rwx------ 1 uli101_181ma22 users     181 Apr  3 14:45 quizscript
+-rwx------ 1 uli101_181ma22 users     146 Mar 29 17:49 scriptForDateTime
+-rwxrwxr-- 1 uli101_181ma22 users      63 Mar 27 14:03 short
+-rw-r--r-- 1 uli101_181ma22 users    5433 Feb 11 14:18 uli101-L1-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   27943 Mar 27 17:18 uli101-L10-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   62771 Mar 29 17:01 uli101-L2-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    5968 Feb 11 15:03 uli101-L3-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users 1048576 Mar 29 17:16 uli101-L4-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users 1539033 Mar 27 13:32 uli101-L5-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users    7147 Mar 27 13:55 uli101-L6-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   37464 Mar  7 10:39 uli101-L7-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   61340 Mar 27 14:39 uli101-L8-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users   22711 Mar 29 17:49 uli101-L9-ajahangir.txt
+-rw-r--r-- 1 uli101_181ma22 users 1719156 Mar 29 17:15 uli101combined
+uli101_181ma22@matrix:~> find /bin -name '*s*h*' -type l -exac ls-l \;
+find: unknown predicate `-exac'
+uli101_181ma22@matrix:~> find /bin -name '*s*h*' -type l -exec ls-l \;
+find: `ls-l': No such file or directory
+find: `ls-l': No such file or directory
+find: `ls-l': No such file or directory
+find: `ls-l': No such file or directory
+uli101_181ma22@matrix:~> find /bin -name '*s*h*' -type l -exec ls-l {} \;
+find: `ls-l': No such file or directory
+find: `ls-l': No such file or directory
+find: `ls-l': No such file or directory
+find: `ls-l': No such file or directory
+uli101_181ma22@matrix:~> find /bin -name '*s*h*' -type l -exec sh {} \;
+/bin/ksh: /bin/ksh: cannot execute binary file
+/bin/csh: /bin/csh: cannot execute binary file
+/bin/ksh93: /bin/ksh93: cannot execute binary file
+/bin/sh: /bin/sh: cannot execute binary file
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Thu 05 Apr 2018 01:01:49 PM EDT
+uli101_181ma22@matrix:~>

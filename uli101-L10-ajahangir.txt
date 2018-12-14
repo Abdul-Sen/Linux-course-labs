@@ -1,0 +1,254 @@
+uli101_181ma22@matrix:~> cat uli101-L10-ajahangir.txt
+Script started on Tue 27 Mar 2018 05:06:21 PM EDT
+uli101_181ma22@matrix:~> head /etc/services
+#
+# Network services, Internet style
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, most entries here have two entries
+# even if the protocol doesn't support UDP operations.
+#
+# This list could be found on:
+#            http://www.iana.org/assignments/port-numbers
+#
+uli101_181ma22@matrix:~> ls /etc
+CommVaultRegistry       default              issue.net                 openmpi-totalview.tcl             selinux
+ConsoleKit              defaultdomain        issue.org                 openvpn                           sensors.d
+DIR_COLORS              depmod.d             java                      opt                               sensors3.conf
+GeoIP.conf              dhclient.conf        joe                       oraInst.loc                       services
+HOSTNAME                dhclient6.conf       jvm                       oratab                            sgml
+ImageMagick             dnsmasq.conf         jvm-commmon               os-release                        shadow
+Muttrc                  drirc                kde4                      pam.d                             shadow.YaST2save
+NetworkManager          enscript.cfg         kde4rc                    pango                             shadow.old
+PackageKit              environment          krb5.conf                 passwd                            shells
+SuSE-brand              ethers               ksh.kshrc                 passwd.YaST2save                  silc
+SuSE-release            exports              ksysguarddrc              passwd.old                        skel
+SuSEconfig              fail2ban             ld.so.cache               permissions                       slp.conf
+UPower                  fb.modes             ld.so.conf                permissions.d                     slp.reg.d
+X11                     filesystems          ld.so.conf.d              permissions.easy                  slp.spi
+YaST2                   fonts                ldap.conf                 permissions.local                 smart_drivedb.h
+a2ps-site.cfg           foomatic             ldap.conf.apr24           permissions.paranoid              smartd.conf
+a2ps.cfg                fstab                ldap.conf.working         permissions.secure                smolt
+aclocal_dirlist         fstab.REAL           lesskey                   php5                              snmp
+acpi                    fstab.july3          lesskey.bin               pkcs11                            socks.conf
+adjtime                 fstab.old.0          libao.conf                pm                                sound
+akonadi                 fstab.org            libaudit.conf             pm-profiler                       speech-dispatcher
+aliases                 ftpusers             libgda-5.0                pm-profiler.conf                  splashy
+aliases.YaST2save       gai.conf             lirc                      polkit-1                          ssh
+aliases.d               gconf                localtime                 polkit-default-privs.local        ssl
+aliases.db              gdbinit              login.defs                polkit-default-privs.restrictive  sudoers
+alsa-pulse.conf         gdbinit.d            logrotate.conf            polkit-default-privs.standard     sudoers.d
+alternatives            gdm                  logrotate.conf.org        postfix                           susehelp.d
+ant.d                   ghostscript          logrotate.d               powerd.conf                       suspend.conf
+apache2                 gimp                 ltrace.conf               ppp                               sysconfig
+asciidoc                gnome-vfs-2.0        lvm                       pptp.d                            sysctl.conf
+asound-pulse.conf       gnome_defaults.conf  machine-id                printcap                          sysctl.confe
+at-spi2                 gnucash              magic                     products.d                        sysctl.d
+at.allow                gnupg                mail.rc                   profile                           sysstat
+at.deny                 gpm                  mailcap                   profile.Aug12                     systemd
+auto.home.pl            gre.d                manpath.config            profile.d                         termcap
+auto.master             group                maven                     profile.jun20                     texmf
+auto.misc               group.YaST2save      mime.types                protocols                         tightvncserver.conf
+auto.net                group.backup.sep17   mke2fs.conf               pulse                             tmpdirs.d
+auto.smb                group.old            modprobe.d                purple                            tmpfiles.d
+autofs_ldap_auth.conf   grub.conf            modules-load.d            pwdutils                          ttytype
+avahi                   grub.conf.old        mono                      pythonstart                       udev
+bash.bashrc             gssapi_mech.conf     motd                      quilt.quiltrc                     unixODBC
+bash_command_not_found  gtk-2.0              mtab                      quotagrpadmins                    usb_modeswitch.conf
+bash_completion         gtk-3.0              mtools.conf               quotatab                          uucp
+bash_completion.d       gxsetup_guid         my.cnf                    raw                               vdpau_wrapper.cfg
+bind.keys               host.conf            mysql                     rc.d                              vimrc
+bindresvport.blacklist  hosts                mysqlaccess.conf          rc.splash                         vmware-tools
+binfmt.d                hosts.YaST2save      named.d                   rc.status                         vpnc
+blkid.conf              hosts.allow          netconfig                 request-key.conf                  warnquota.conf
+bluetooth               hosts.back           netconfig.d               resolv.conf                       wgetrc
+bogofilter.cf           hosts.deny           netgroup                  resolv.conf.netconfig             wodim.conf
+bonobo-activation       hosts.equiv          netscsid.conf             rpc                               wpa_supplicant
+bootsplash              hosts.lpd            networks                  rpm                               xattr.conf
+brltty                  hp                   news                      rsyncd.conf                       xdg
+brltty.conf             htdig                nscd.conf                 rsyncd.secrets                    xinetd.conf
+ca-certificates         httpd                nsswitch.conf             rsyslog.conf                      xinetd.d
+cron.allow              hushlogins           nsswitch.conf.backup      rsyslog.conf.matrix               xml
+cron.d                  icewm                nsswitch.conf.jun13.2012  rsyslog.conf.org                  xscreensaver
+cron.daily              idn.conf             nsswitch.conf.org         rsyslog.conf.rpmnew               xsp
+cron.deny               idnalias.conf        nsswitch.conf.working     rsyslog.d                         yp.conf
+cron.hourly             ifplugd              nsswitch.confbak          rsyslog.early.conf                yp.conf.back
+cron.monthly            init.d               ntp.conf                  rsyslog.early.conf.matrix         yp.conf.netconfig
+cron.weekly             initscript           ntp.conf.backup           rsyslog.early.conf.org            zprofile
+crontab                 inittab              ntp.keys                  rsyslog.early.conf.rpmnew         zsh_command_not_found
+csh.cshrc               inputrc              obex-data-server          samba                             zshenv
+csh.login               insserv.conf         octave                    sane.d                            zshrc
+cups                    iproute2             omc                       sasl2                             zypp
+cupshelpers             irssi.conf           openldap                  screenrc
+dbus-1                  iscsi                openmpi-default-hostfile  securetty
+dconf                   issue                openmpi-mca-params.conf   security
+uli101_181ma22@matrix:~> who
+mnourinejad pts/0        2018-03-27 08:33 (cpe64777dd824a3-cm64777dd824a0.cpe.net.cable.rogers.com)
+yadan    pts/1        2018-03-27 16:27 (10.43.138.221)
+uli101_181ma22 pts/2        2018-03-27 17:05 (10.43.102.177)
+adi-stefano pts/4        2018-03-27 11:42 (10.40.13.203)
+bsbains2 pts/6        2018-03-27 17:00 (10.40.13.82)
+hkim273  pts/8        2018-03-27 16:44 (toroon474qw-lp130-07-174-92-82-218.dsl.bell.ca)
+uli101_181ma22@matrix:~> date
+Tue Mar 27 17:06:44 EDT 2018
+uli101_181ma22@matrix:~> uname -a
+Linux matrix 3.1.10-1.29-default #1 SMP Fri May 31 20:10:04 UTC 2013 (2529847) i686 athlon i386 GNU/Linux
+uli101_181ma22@matrix:~> history | tail -10
+ 1797  cleear
+ 1798  clear
+ 1799  script ch8l2
+ 1800  exit
+ 1801  head /etc/services
+ 1802  ls /etc
+ 1803  who
+ 1804  date
+ 1805  uname -a
+ 1806  history | tail -10
+uli101_181ma22@matrix:~> !1802
+ls /etc
+CommVaultRegistry       default              issue.net                 openmpi-totalview.tcl             selinux
+ConsoleKit              defaultdomain        issue.org                 openvpn                           sensors.d
+DIR_COLORS              depmod.d             java                      opt                               sensors3.conf
+GeoIP.conf              dhclient.conf        joe                       oraInst.loc                       services
+HOSTNAME                dhclient6.conf       jvm                       oratab                            sgml
+ImageMagick             dnsmasq.conf         jvm-commmon               os-release                        shadow
+Muttrc                  drirc                kde4                      pam.d                             shadow.YaST2save
+NetworkManager          enscript.cfg         kde4rc                    pango                             shadow.old
+PackageKit              environment          krb5.conf                 passwd                            shells
+SuSE-brand              ethers               ksh.kshrc                 passwd.YaST2save                  silc
+SuSE-release            exports              ksysguarddrc              passwd.old                        skel
+SuSEconfig              fail2ban             ld.so.cache               permissions                       slp.conf
+UPower                  fb.modes             ld.so.conf                permissions.d                     slp.reg.d
+X11                     filesystems          ld.so.conf.d              permissions.easy                  slp.spi
+YaST2                   fonts                ldap.conf                 permissions.local                 smart_drivedb.h
+a2ps-site.cfg           foomatic             ldap.conf.apr24           permissions.paranoid              smartd.conf
+a2ps.cfg                fstab                ldap.conf.working         permissions.secure                smolt
+aclocal_dirlist         fstab.REAL           lesskey                   php5                              snmp
+acpi                    fstab.july3          lesskey.bin               pkcs11                            socks.conf
+adjtime                 fstab.old.0          libao.conf                pm                                sound
+akonadi                 fstab.org            libaudit.conf             pm-profiler                       speech-dispatcher
+aliases                 ftpusers             libgda-5.0                pm-profiler.conf                  splashy
+aliases.YaST2save       gai.conf             lirc                      polkit-1                          ssh
+aliases.d               gconf                localtime                 polkit-default-privs.local        ssl
+aliases.db              gdbinit              login.defs                polkit-default-privs.restrictive  sudoers
+alsa-pulse.conf         gdbinit.d            logrotate.conf            polkit-default-privs.standard     sudoers.d
+alternatives            gdm                  logrotate.conf.org        postfix                           susehelp.d
+ant.d                   ghostscript          logrotate.d               powerd.conf                       suspend.conf
+apache2                 gimp                 ltrace.conf               ppp                               sysconfig
+asciidoc                gnome-vfs-2.0        lvm                       pptp.d                            sysctl.conf
+asound-pulse.conf       gnome_defaults.conf  machine-id                printcap                          sysctl.confe
+at-spi2                 gnucash              magic                     products.d                        sysctl.d
+at.allow                gnupg                mail.rc                   profile                           sysstat
+at.deny                 gpm                  mailcap                   profile.Aug12                     systemd
+auto.home.pl            gre.d                manpath.config            profile.d                         termcap
+auto.master             group                maven                     profile.jun20                     texmf
+auto.misc               group.YaST2save      mime.types                protocols                         tightvncserver.conf
+auto.net                group.backup.sep17   mke2fs.conf               pulse                             tmpdirs.d
+auto.smb                group.old            modprobe.d                purple                            tmpfiles.d
+autofs_ldap_auth.conf   grub.conf            modules-load.d            pwdutils                          ttytype
+avahi                   grub.conf.old        mono                      pythonstart                       udev
+bash.bashrc             gssapi_mech.conf     motd                      quilt.quiltrc                     unixODBC
+bash_command_not_found  gtk-2.0              mtab                      quotagrpadmins                    usb_modeswitch.conf
+bash_completion         gtk-3.0              mtools.conf               quotatab                          uucp
+bash_completion.d       gxsetup_guid         my.cnf                    raw                               vdpau_wrapper.cfg
+bind.keys               host.conf            mysql                     rc.d                              vimrc
+bindresvport.blacklist  hosts                mysqlaccess.conf          rc.splash                         vmware-tools
+binfmt.d                hosts.YaST2save      named.d                   rc.status                         vpnc
+blkid.conf              hosts.allow          netconfig                 request-key.conf                  warnquota.conf
+bluetooth               hosts.back           netconfig.d               resolv.conf                       wgetrc
+bogofilter.cf           hosts.deny           netgroup                  resolv.conf.netconfig             wodim.conf
+bonobo-activation       hosts.equiv          netscsid.conf             rpc                               wpa_supplicant
+bootsplash              hosts.lpd            networks                  rpm                               xattr.conf
+brltty                  hp                   news                      rsyncd.conf                       xdg
+brltty.conf             htdig                nscd.conf                 rsyncd.secrets                    xinetd.conf
+ca-certificates         httpd                nsswitch.conf             rsyslog.conf                      xinetd.d
+cron.allow              hushlogins           nsswitch.conf.backup      rsyslog.conf.matrix               xml
+cron.d                  icewm                nsswitch.conf.jun13.2012  rsyslog.conf.org                  xscreensaver
+cron.daily              idn.conf             nsswitch.conf.org         rsyslog.conf.rpmnew               xsp
+cron.deny               idnalias.conf        nsswitch.conf.working     rsyslog.d                         yp.conf
+cron.hourly             ifplugd              nsswitch.confbak          rsyslog.early.conf                yp.conf.back
+cron.monthly            init.d               ntp.conf                  rsyslog.early.conf.matrix         yp.conf.netconfig
+cron.weekly             initscript           ntp.conf.backup           rsyslog.early.conf.org            zprofile
+crontab                 inittab              ntp.keys                  rsyslog.early.conf.rpmnew         zsh_command_not_found
+csh.cshrc               inputrc              obex-data-server          samba                             zshenv
+csh.login               insserv.conf         octave                    sane.d                            zshrc
+cups                    iproute2             omc                       sasl2                             zypp
+cupshelpers             irssi.conf           openldap                  screenrc
+dbus-1                  iscsi                openmpi-default-hostfile  securetty
+dconf                   issue                openmpi-mca-params.conf   security
+uli101_181ma22@matrix:~> #DONE
+uli101_181ma22@matrix:~> history | tail -10
+ 1800  exit
+ 1801  head /etc/services
+ 1802  ls /etc
+ 1803  who
+ 1804  date
+ 1805  uname -a
+ 1806  history | tail -10
+ 1807  ls /etc
+ 1808  #DONE
+ 1809  history | tail -10
+uli101_181ma22@matrix:~> !-5
+uname -a
+Linux matrix 3.1.10-1.29-default #1 SMP Fri May 31 20:10:04 UTC 2013 (2529847) i686 athlon i386 GNU/Linux
+uli101_181ma22@matrix:~> #DONE USING nth number
+uli101_181ma22@matrix:~> history | tail -10
+ 1803  who
+ 1804  date
+ 1805  uname -a
+ 1806  history | tail -10
+ 1807  ls /etc
+ 1808  #DONE
+ 1809  history | tail -10
+ 1810  uname -a
+ 1811  #DONE USING nth number
+ 1812  history | tail -10
+uli101_181ma22@matrix:~> !!
+history | tail -10
+ 1803  who
+ 1804  date
+ 1805  uname -a
+ 1806  history | tail -10
+ 1807  ls /etc
+ 1808  #DONE
+ 1809  history | tail -10
+ 1810  uname -a
+ 1811  #DONE USING nth number
+ 1812  history | tail -10
+uli101_181ma22@matrix:~> #repeated previous command
+uli101_181ma22@matrix:~> history | tail -10
+ 1805  uname -a
+ 1806  history | tail -10
+ 1807  ls /etc
+ 1808  #DONE
+ 1809  history | tail -10
+ 1810  uname -a
+ 1811  #DONE USING nth number
+ 1812  history | tail -10
+ 1813  #repeated previous command
+ 1814  history | tail -10
+uli101_181ma22@matrix:~> #since head is no longer in the list, i will be using uname -a for part 3 -d
+uli101_181ma22@matrix:~> history | tail -10
+ 1807  ls /etc
+ 1808  #DONE
+ 1809  history | tail -10
+ 1810  uname -a
+ 1811  #DONE USING nth number
+ 1812  history | tail -10
+ 1813  #repeated previous command
+ 1814  history | tail -10
+ 1815  #since head is no longer in the list, i will be using uname -a for part 3 -d
+ 1816  history | tail -10
+uli101_181ma22@matrix:~> !un
+uname -a
+Linux matrix 3.1.10-1.29-default #1 SMP Fri May 31 20:10:04 UTC 2013 (2529847) i686 athlon i386 GNU/Linux
+uli101_181ma22@matrix:~> alias d='date'
+uli101_181ma22@matrix:~> d
+Tue Mar 27 17:18:23 EDT 2018
+uli101_181ma22@matrix:~> #the alias works
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+
+Script done on Tue 27 Mar 2018 05:18:30 PM EDT

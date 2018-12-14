@@ -1,0 +1,26 @@
+
+uli101_181ma22@matrix:~> script l4Again
+Script started, file is l4Again
+uli101_181ma22@matrix:~> touch dog
+uli101_181ma22@matrix:~> ls dog
+dog
+uli101_181ma22@matrix:~> ls -l dog
+-r--r--r-- 1 uli101_181ma22 users 0 Apr  6 13:36 dog
+uli101_181ma22@matrix:~> #file only has read permissions for all
+uli101_181ma22@matrix:~> #file belongs to users
+uli101_181ma22@matrix:~> ls -l /bin/bash
+-rwxr-xr-x 1 root root 644340 Sep 26  2014 /bin/bash
+uli101_181ma22@matrix:~> #belongs to root, user has read write and execute permissions
+uli101_181ma22@matrix:~> chmod 600 dog
+uli101_181ma22@matrix:~> ls -l dog
+-rw------- 1 uli101_181ma22 users 0 Apr  6 13:36 dog
+uli101_181ma22@matrix:~> # now to give them all read only permissions
+uli101_181ma22@matrix:~> chmod 444 dog
+uli101_181ma22@matrix:~> ls -l dog
+-r--r--r-- 1 uli101_181ma22 users 0 Apr  6 13:36 dog
+uli101_181ma22@matrix:~> #DONE
+uli101_181ma22@matrix:~>whoami
+uli101_181ma22
+uli101_181ma22@matrix:~> exit
+exit
+Script done, file is l4Again
